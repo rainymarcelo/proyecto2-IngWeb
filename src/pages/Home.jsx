@@ -1,26 +1,23 @@
+import { CircleImage } from 'components/CircleImage';
 import { InfoCard } from 'components/InfoCard';
 import { InfoLink } from 'components/InfoLink';
+import { IntroductionText } from 'components/IntroductionText';
+import { NameText } from 'components/NameText';
 import React from 'react';
 
 const Home = () => (
   <main>
     <div className='bg-gradient-to-br from-black to-red-700'>
       <div>
-        <img
-          className=' py-4 object-contain rounded-full mx-auto'
-          src='FotoMarcelo.jpg'
-          alt='Foto marcelo de la hoz'
-        />
+        <CircleImage />
       </div>
-      <h1 className='text-white text-2xl font-bold text-center  py-4'>
-        Marcelo De la hoz Sierra
-      </h1>
+      <NameText>Marcelo De la hoz sierra</NameText>
     </div>
-    <p className='py-8 px-4 text-center'>
+    <IntroductionText>
       Soy estudiante de ingeniería de sistemas de séptimo semestre en la
       universidad de Antioquia, tengo 23 años y en este momento vivo en
       Medellín.
-    </p>
+    </IntroductionText>
     <div className='py-4 flex justify-center gap-4 flex-wrap mx-4 '>
       <InfoCard
         subtitle='Historia académica'
@@ -50,7 +47,7 @@ const Home = () => (
         info3='Comunicaciones'
       />
     </div>
-    <footer className='bg-gradient-to-br from-black to-red-700 flex'>
+    <footer className='bg-gradient-to-br from-black to-red-700 flex h-52'>
       <table>
         <InfoLink
           imgAlt='gmail logo'
