@@ -50,8 +50,8 @@ const Home = () => (
         info3='Comunicaciones'
       />
     </div>
-    <footer className='bg-gradient-to-br from-black to-red-700 '>
-      <table className='max-h-52'>
+    <footer className='bg-gradient-to-br from-black to-red-700 flex'>
+      <table>
         <InfoLink
           imgAlt='gmail logo'
           path='GmailLogo.webp'
